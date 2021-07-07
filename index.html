@@ -5,32 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.googleapis.com/",
-        "@type": "ARArtifact",
-        "arTarget": {
-          "@type": "ARImageTarget",
-          "name": "lldebugtarget2",
-          "image": "http://aruslan.io/lldebugtarget2/IMG_8458.jpg"
-        },
-        "arPlacement": {
-          "@type": "ARPlanarReplacement",
-          "scaleMode": "ScaleModeFill"
-        },
-        "arContent": {
-          "@type": "VideoObject",
-          "name": "lldebugtarget2name",
-          "description": "lldebugtarget2description",
-          "contentUrl": "http://aruslan.io/lldebugtarget2/IMG_8457.mp4",
-          "image": "http://aruslan.io/lldebugtarget2/IMG_8458.jpg",
-          "url": "http://aruslan.io/",
-          "publisher": {
-            "@type": "Organization",
-            "name": "aruslan",
-            "logo": "http://aruslan.io/lldebugtarget2/aruslan.jpg"
-          }
-        }
-      }
+{
+  "@context": "https://schema.googleapis.com",
+  "@type": "ARArtifact",
+  "arTarget": {
+    "@type": "ARImageTarget",
+    "name" : "Lens Magic",
+    "image": "http://aruslan.io/lldebugtarget2/anna-pic.jpg",
+    "width": 0.2
+  },
+  "arContent": {
+    "@type": "ARNode",
+    "name": "Card Title",
+    "image": "http://aruslan.io/lldebugtarget2/anna-pic.jpg",
+    "url": "http://aruslan.io",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Ruslan Abdikeev",
+      "logo": "http://aruslan.io/lldebugtarget2/aruslan.jpg"
+    }
+    // arInitialAxisOrientation indicates whether the plane is vertical (ARAxisInherit)
+    // or horizontal (ARYAxisNormal). (The default is ARAxisInherit.)
+    "arInitialAxisOrientation": "ARAxisInherit OR ARYAxisNormal",
+
+    // translate3d is optional.
+    "translate3d": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+
+    // scale3d is optional.
+    "scale3D": 1,
+
+    "associatedMedia": {
+      "@type": "3DModel",
+      "name": "Lens magic",
+      "encoding": {
+        "@type": "MediaObject",
+        "contentUrl": "https://aruslan.io/lldebugtarget2/LensAnim_v15.glb",
+        "encodingFormat": "model/gltf-binary"
+      },
+    }
+  }
+}
       </script>
     <title>lldebugtarget2</title>
 
