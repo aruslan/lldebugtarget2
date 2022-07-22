@@ -11,7 +11,7 @@
   "arTarget": {
     "@type": "ARImageTarget",
     "name" : "Beam1",
-    "image": "http://aruslan.io/lldebugtarget2/beam1.jpg",
+    "image": "http://aruslan.io/lldebugtarget2/beam2.jpg",
     "width": 1.0
   },
   "arPlacement": {
@@ -19,15 +19,42 @@
     "scaleMode": "ScaleModeFit"
   },
   "arContent": {
-    "@type": "VideoObject",
-    "name": "Beam1",
-    "contentUrl": "https://aruslan.io/lldebugtarget2/sf_loop2.mp4",
-    "image": "https://aruslan.io/lldebugtarget2/sf_target2.jpeg",
-    "url": "https://aruslan.io/",
+    "@type": "ARNode",
+    "name": "Lens Magic",
+    "image": ""http://aruslan.io/lldebugtarget2/beam2.jpg",
+    "url": "http://aruslan.io",
     "publisher": {
       "@type": "Organization",
       "name": "Magic Lens",
       "logo": "http://aruslan.io/lldebugtarget2/aruslan.jpg"
+    },
+    // arInitialAxisOrientation indicates whether the plane is vertical (ARAxisInherit)
+    // or horizontal (ARYAxisNormal). (The default is ARAxisInherit.)
+    "arInitialAxisOrientation": "ARYAxisNormal",
+
+    // translate3d is optional.
+    "translate3d": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+
+    // scale3d is optional.
+    "scale3D": 1.0,
+
+    "associatedMedia": {
+        "@type": "3DModel",
+        "name" : "Bengal Tiger",
+        "encoding": {
+          "@type": "MediaObject",
+          "contentUrl": "https://max-lens-testing.firebaseapp.com/models/safari_tiger.glb",
+          "encodingFormat": "model/gltf-binary"
+        },
+        "audio": {
+          "@type":"AudioObject",
+          "contentUrl": "https://max-lens-testing.firebaseapp.com/audio/safari_tiger.mp3",
+          "encodingFormat": "audio/mpeg"
+        }
     }
   }
 }
